@@ -5,12 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --hot --open",
-    "precommit-msg": "echo 'linting...' && exit(0)",
-    "lint-staged": "standard --fix",
-    "pre-commit": [
-      "precommit-msg",
-      "lint-staged"
-    ]
+    "precommit-msg": "echo 'linting...' && exit 0",
+    "lint-staged": "standard --fix"
   },
   "author": "",
   "license": "ISC",
@@ -34,5 +30,9 @@
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
-  }
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "lint-staged"
+  ]
 }
