@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 export default class Auth extends Component {
-  render() {
+  render () {
     return <h1>Auth Route</h1>
   }
 }
