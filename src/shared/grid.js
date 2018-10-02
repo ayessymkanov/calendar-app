@@ -10,4 +10,3 @@ export const Col = styled.div`
   flex: ${props => props.span};
   align-self: ${props => props.center ? 'center' : 'flex-start'};
 `
-
